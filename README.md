@@ -1,4 +1,4 @@
-# Taskify - A Simple Task Manager
+# Taskify - Simplify Your Day, Amplify Your Productivity
 
 Taskify is a lightweight, user-friendly task manager app that helps you manage and organize your tasks with ease. It features task input, task deletion, search functionality, and task completion toggling. All tasks are persisted in the local storage, so they remain saved even after refreshing the page.
 
