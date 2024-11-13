@@ -22,15 +22,28 @@ const App = () => {
     setTasks([...tasks,{id:Date.now(),title,completed:false}]);
   };
 
-  
+  const deleteTask = (id) =>{
+    setTasks(
+      tasks.map(task => task.id===id ? {...task,completed:!task.completed} : task)
+    );
+  };
 
+  const filteredTask = tasks.filter(task => 
+    task.title.tolowerCase().include(searchTerm.tolowerCase())
+  );
+
+  const toggleCompletion = (id) =>{
+    setTasks(
+      tasks.map((task)=> task.id ? {...task,completed: !task.completed}:task)
+    );
+  }
 
   return (
     <>
       <div > 
         <h1 className='text-2xl m-6'>Taskify - Simplify Your Day, Amplify Your Productivity.</h1>
         <TaskInput addTask={addTask}/>
-        <TaskList />
+        <TaskList tasks={filteredTask} deleteTask={deleteTask} toggleCompletion={toggleCompletion} />
       </div>
     </>
   )

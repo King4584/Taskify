@@ -2,15 +2,15 @@
 
 import TaskItem from "./TaskItem"
 
-const TaskList = () => {
+const TaskList = ({tasks,deleteTask,toggleCompletion}) => {
   return (
     <ul>
-        {TaskList.map(()=>(
-            <TaskItem/>
+        {tasks.map((task)=>(
+            <TaskItem key={task.id} task={task} deleteTask={deleteTask} toggleCompletion={toggleCompletion} />
         ))}
       
     </ul>
-  )
+  );
 }
 
 export default TaskList
