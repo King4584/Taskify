@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // import React from 'react'
 
 const TaskItem = ({task,deleteTask,toggleCompletion}) => {
@@ -10,7 +11,7 @@ const TaskItem = ({task,deleteTask,toggleCompletion}) => {
           onChange={() => toggleCompletion(task.id)}
           className="mr-2"
         />
-        <span className={`${task.completed ? 'line-through text-gray-500' : ''}`}>
+        <span className={`text-black ${task.completed ? 'line-through' : ''}`} >
           {task.title}
         </span>
       </div>
