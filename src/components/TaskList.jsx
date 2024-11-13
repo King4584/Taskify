@@ -1,10 +1,15 @@
-import React from 'react'
+// import React from 'react'
+
+import TaskItem from "./TaskItem"
 
 const TaskList = () => {
   return (
-    <div>
+    <ul>
+        {TaskList.map(()=>(
+            <TaskItem/>
+        ))}
       
-    </div>
+    </ul>
   )
 }
 

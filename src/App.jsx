@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import { title } from 'framer-motion/client';
+// import { title } from 'framer-motion/client';
 import TaskInput from './components/TaskInput';
+import TaskList from './components/TaskList';
 
 const App = () => {
   const [tasks,setTasks]= useState([]);
@@ -21,12 +22,15 @@ const App = () => {
     setTasks([...tasks,{id:Date.now(),title,completed:false}]);
   };
 
+  
+
 
   return (
     <>
-      <div className='text-3xl'> 
-        <h1>Taskify - Simplify Your Day, Amplify Your Productivity.</h1>
+      <div > 
+        <h1 className='text-2xl m-6'>Taskify - Simplify Your Day, Amplify Your Productivity.</h1>
         <TaskInput addTask={addTask}/>
+        <TaskList />
       </div>
     </>
   )
