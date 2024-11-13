@@ -28,11 +28,30 @@ git clone https://github.com/your-username/taskify.git
 
 ### 2. Navigate to the Project Directory
 After cloning the repository, navigate to the project directory:
-
+```
 ```bash
 cd taskify
 ## Screenshots
-
+```
 Here is a screenshot of the app in action:
 
-![Taskify Screenshot](./assets/screenshot.png)
+
+#User Interface
+![User Interface ](https://github.com/King4584/Taskify/blob/main/public/Screenshots/UI.jpeg.png)
+
+#Typing Task
+![Typing Task](https://github.com/King4584/Taskify/blob/main/public/Screenshots/TypingTask.png.png)
+
+#Search Task
+![Search Task](https://github.com/King4584/Taskify/blob/main/public/Screenshots/SearchTask.png.png)
+
+#Completed Task
+![Completed Task ](https://github.com/King4584/Taskify/blob/main/public/Screenshots/CompletedTask.png.png)
+
+
+
+
+
+
+
+
