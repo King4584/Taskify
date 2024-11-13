@@ -36,16 +36,20 @@ cd taskify
 Here is a screenshot of the app in action:
 
 
-#User Interface
+## User Interface
+
 ![User Interface ](https://github.com/King4584/Taskify/blob/main/public/Screenshots/UI.jpeg.png)
 
-#Typing Task
+## Typing Task
+
 ![Typing Task](https://github.com/King4584/Taskify/blob/main/public/Screenshots/TypingTask.png.png)
 
-#Search Task
+## Search Task
+
 ![Search Task](https://github.com/King4584/Taskify/blob/main/public/Screenshots/SearchTask.png.png)
 
-#Completed Task
+## Completed Task
+
 ![Completed Task ](https://github.com/King4584/Taskify/blob/main/public/Screenshots/CompletedTask.png.png)
 
 
