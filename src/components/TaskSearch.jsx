@@ -2,8 +2,14 @@
 
 const TaskSearch = ({searchTerm,setSearchTerm}) => {
   return (
-    <div className="m-4">
-      <input className="p-2 rounded rounded-lg" type="text" placeholder="Search Task" value={searchTerm} onChange={(e)=> setSearchTerm(e.target.value)} />
+    <div className="mb-4">
+      <input
+        type="text"
+        placeholder="Search tasks"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        className="w-full p-2 border border-gray-300 rounded-lg bg-slate-700"
+      />
     </div>
   )
 }
